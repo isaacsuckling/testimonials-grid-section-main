@@ -1,0 +1,41 @@
+/*Responsive*/
+@media (max-width: 1140px) {
+  main {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(251px, 251px));
+    margin: 80px auto;
+  }
+  .box-5 {
+    grid-area: 3 / 1 / 4 / 4;
+  }
+}
+
+@media (max-width: 880px) {
+  main {
+    width: 80%;
+    grid-template-rows: auto;
+    grid-template-columns: minmax(310px, 445px);
+    justify-content: center;
+    margin: 80px auto;
+  }
+
+  .box-1 {
+    grid-area: 1 / 1 / 3 / 2;
+  }
+  
+  .box-2 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  
+  .box-3 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  
+  .box-4 {
+    grid-area: 5 / 1 / 7 / 2;
+  }
+  
+  .box-5 {
+    grid-area: 7 / 1 / 9 / 2;
+  }
+}
